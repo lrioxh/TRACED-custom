@@ -114,6 +114,11 @@ python run_finetune_vul_detect.py \
 	--train_file data/vul_detect/CodeXGLUE/train_func.csv \
 	--validation_file data/vul_detect/CodeXGLUE/valid_func.csv \
 	--test_file data/vul_detect/CodeXGLUE/test_func.csv \
+	--report_to tensorboard \
 	--overwrite_output_dir 2>&1 | tee $OUTPUT_DIR/log_finetune
 
+```
+
+```bash
+export OUTPUT_DIR=./output; export CACHE_DIR=./cache; 
 ```
