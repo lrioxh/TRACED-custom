@@ -15,6 +15,7 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --e
 git clone https://github.com/NVIDIA/apex.git
 cd apex;
 pip install -v --disable-pip-version-check --no-cache-dir ./
+pip install -v --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" --global-option="--deprecated_fused_adam" --global-option="--xentropy" --global-option="--fast_multihead_attn" ./
 
 # Configure accelerate (required only for pre-training)
 
